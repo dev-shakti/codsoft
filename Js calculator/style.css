@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background: #34495e;
+    padding: 10px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #f2f2f2;
+}
+
+.calculator{
+  background-color: #f2f2f2;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+  overflow: hidden;
+  padding: 20px;
+}
+
+.calculator input{
+   padding: 10px;
+   width: 100%;
+   margin-bottom: 20px;
+   border: none;
+   border-radius: 5px;
+   box-shadow: 2px 2px 5px rgba(0,0,0,0.3) inset;
+   font-size: 25px;
+   color: #3498db;
+   text-align: right;
+}
+
+.calculator input:focus{
+    outline: none;
+}
+
+.calculator .btns{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+
+.calculator button{
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+    transition: opacity 0.3s ease;
+} 
+
+.calculator button:hover{
+    opacity: 0.8;
+}
+
+.calculator .number{
+    background-color: white;
+    color: #999;
+}
+
+.calculator .operator{
+    background-color: #3498db;
+    color: #fff;
+}
+
+.calculator .equal{
+    grid-row: span 3;
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+.calculator .clear{
+    background-color: #e74c3c;
+    color: #fff;
+}
